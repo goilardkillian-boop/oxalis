@@ -30,18 +30,7 @@ window.SITE_CONTENT = {
     line2b: 'flacon.',
     image: 'images/hero.jpg',
     imageAlt: 'Trois soins solides Oxalis Homme posés sur une pierre : un pain nettoyant gris, un savon de rasage dans un bol en bois et un baume dans une boîte en aluminium.',
-    floaters: [
-      'images/d01-pain-gris.jpg',
-      'images/d13-argile.jpg',
-      'images/d02-boite-baume.jpg',
-      'images/d10-mousse.jpg',
-      'images/d15-spatule.jpg',
-      'images/d03-serviette.jpg',
-      'images/d16-mains.jpg',
-      'images/d19-cube-boite.jpg',
-      'images/d14-beurre.jpg',
-      'images/d04-trefle.jpg'
-    ]
+    floaters: []                                   // nuage d’images du hero retiré à la demande du client
   },
 
   positioning: 'Soins solides pour hommes, nés à Lyon',
