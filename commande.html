@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Finaliser la commande · Oxalis Homme</title>
+  <meta name="description" content="Coordonnées, livraison et récapitulatif. Démonstration : aucun paiement n’est effectué.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="commande.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oxalis Homme">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Finaliser la commande · Oxalis Homme">
+  <meta property="og:description" content="Coordonnées, livraison et récapitulatif. Démonstration : aucun paiement n’est effectué.">
+  <meta property="og:url" content="commande.html">
+  <meta property="og:image" content="images/og-oxalis-homme.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Les trois soins solides Oxalis Homme posés sur une pierre, devant un mur vert sapin.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1F3D2B">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/archivo-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/boutique.css">
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu</a>
+  <noscript><div class="conteneur"><p class="message-page">Le panier de ce site a besoin de JavaScript. Liens essentiels : <a class="lien" href="index.html">Accueil</a> · <a class="lien" href="boutique.html">Boutique</a> · <a class="lien" href="routine.html">La routine</a> · <a class="lien" href="a-propos.html">À propos</a> · <a class="lien" href="mentions-legales.html">Mentions légales</a> · <a class="lien" href="cgv.html">CGV</a></p></div></noscript>
+  <main id="contenu" tabindex="-1">
+    <div class="conteneur">
+      <header class="tete-page">
+        <h1>Finaliser la commande</h1>
+      </header>
+      <div class="commande">
+        <form id="formCommande" novalidate>
+          <p class="encart-demo">Site de démonstration : ce formulaire n’envoie rien et aucun paiement n’est effectué. Tu peux saisir des informations fictives.</p>
+          <p class="mention">Tous les champs sont obligatoires, sauf mention « facultatif ».</p>
+
+          <fieldset>
+            <legend><span class="num" aria-hidden="true">1</span>Coordonnées</legend>
+            <div class="champs">
+              <div class="champ"><label for="prenom">Prénom</label><input id="prenom" name="prenom" type="text" autocomplete="given-name" required></div>
+              <div class="champ"><label for="nom">Nom</label><input id="nom" name="nom" type="text" autocomplete="family-name" required></div>
+              <div class="champ plein"><label for="email">E-mail</label><input id="email" name="email" type="email" inputmode="email" autocomplete="email" spellcheck="false" required></div>
+              <div class="champ plein"><label for="tel">Téléphone <span class="facultatif">(facultatif)</span></label><input id="tel" name="tel" type="tel" inputmode="tel" autocomplete="tel"></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="num" aria-hidden="true">2</span>Livraison</legend>
+            <div class="choix-livraison" role="radiogroup" aria-label="Mode de livraison">
+              <label class="choix"><input type="radio" name="livraison" value="domicile" checked><span class="choix-texte"><span>À domicile, sous 2 à 4 jours ouvrés</span><span id="prixDomicile">4,90 €</span></span></label>
+              <label class="choix"><input type="radio" name="livraison" value="lyon"><span class="choix-texte"><span>Retrait à Lyon</span><span>Gratuit</span></span></label>
+              <label class="choix"><input type="radio" name="livraison" value="annecy"><span class="choix-texte"><span>Retrait à Annecy</span><span>Gratuit</span></span></label>
+            </div>
+            <p class="mention" style="margin-top:8px">Livraison à domicile : 4,90 €, offerte dès 45 € d’achat, en France métropolitaine.</p>
+            <div class="champs" id="blocAdresse" style="margin-top:24px">
+              <div class="champ plein"><label for="adresse">Adresse</label><input id="adresse" name="adresse" type="text" autocomplete="street-address" required></div>
+              <div class="champ"><label for="cp">Code postal</label><input id="cp" name="cp" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></div>
+              <div class="champ"><label for="ville">Ville</label><input id="ville" name="ville" type="text" autocomplete="address-level2" required></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span class="num" aria-hidden="true">3</span>Récapitulatif</legend>
+            <div id="recapCommande"></div>
+            <div id="recapTotaux" style="margin-top:16px"></div>
+            <p style="margin-top:12px"><a class="lien" href="panier.html">Modifier le panier</a></p>
+            <div class="encart-paiement" style="margin-top:24px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="9" rx="1"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg><p>Le paiement n’est pas simulé sur cette démonstration.</p></div>
+            <div class="case-cgv" style="margin-top:24px">
+              <label class="case" for="cgv"><input type="checkbox" id="cgv" name="cgv" required><span>J’ai lu et j’accepte les <a class="lien" href="cgv.html" target="_blank" rel="noopener">conditions générales de vente<span class="visuellement-cache"> (nouvel onglet)</span></a>.</span></label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="bouton bouton-principal bouton-pleine-largeur">Commander et payer (démonstration)</button>
+        </form>
+        <aside class="resume" aria-label="Ta commande">
+          <h2>Ta commande</h2>
+          <div id="resumeTotaux"></div>
+        </aside>
+      </div>
+    </div>
+  </main>
+  <script src="data/produits.js"></script>
+  <script src="js/commun.js"></script>
+  <script src="js/panier.js"></script>
+  <script src="js/commande.js"></script>
+</body>
+</html>

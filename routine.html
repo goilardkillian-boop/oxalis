@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compose ta routine en 3 gestes · Oxalis Homme</title>
+  <meta name="description" content="Choisis tes gestes, ajoute ta routine au panier. Les 3 soins en coffret à 39,90 €.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="routine.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Oxalis Homme">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Compose ta routine en 3 gestes · Oxalis Homme">
+  <meta property="og:description" content="Choisis tes gestes, ajoute ta routine au panier. Les 3 soins en coffret à 39,90 €.">
+  <meta property="og:url" content="routine.html">
+  <meta property="og:image" content="images/og-oxalis-homme.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Les trois soins solides Oxalis Homme posés sur une pierre, devant un mur vert sapin.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#1F3D2B">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/archivo-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/boutique.css">
+</head>
+<body>
+  <a class="evitement" href="#contenu">Aller au contenu</a>
+  <noscript><div class="conteneur"><p class="message-page">Le panier de ce site a besoin de JavaScript. Liens essentiels : <a class="lien" href="index.html">Accueil</a> · <a class="lien" href="boutique.html">Boutique</a> · <a class="lien" href="routine.html">La routine</a> · <a class="lien" href="a-propos.html">À propos</a> · <a class="lien" href="mentions-legales.html">Mentions légales</a> · <a class="lien" href="cgv.html">CGV</a></p></div></noscript>
+  <main id="contenu" tabindex="-1">
+    <div class="conteneur">
+      <header class="tete-page">
+        <p class="etiquette">Nettoyer · Raser · Hydrater</p>
+        <h1>Compose ta routine en 3 gestes</h1>
+        <p class="chapo">Coche les gestes dont tu as besoin. Si tu prends les trois, on te propose le coffret, moins cher.</p>
+      </header>
+      <form class="routine" id="formRoutine" novalidate>
+        <fieldset>
+          <legend class="visuellement-cache">Tes gestes</legend>
+          <ol class="gestes">
+          <li class="geste">
+            <span class="geste-numero" aria-hidden="true">1</span>
+            <label class="case geste-principal" for="geste1">
+              <input type="checkbox" class="geste-case" id="geste1" name="geste1" checked>
+              <span class="geste-ligne">
+                <img src="images/p-nettoyant.jpg" width="560" height="560" alt="" loading="lazy" decoding="async">
+                <span class="geste-texte">
+                  <span class="etiquette">Geste 01</span>
+                  <strong class="h3-like">Nettoyer</strong>
+                  <span class="mention" style="display:block">Le Nettoyant · 60&nbsp;g</span>
+                </span>
+                <span class="prix" data-prix="nettoyant-visage-solide"></span>
+              </span>
+            </label>
+
+          </li>
+          <li class="geste">
+            <span class="geste-numero" aria-hidden="true">2</span>
+            <label class="case geste-principal" for="geste2">
+              <input type="checkbox" class="geste-case" id="geste2" name="geste2" checked>
+              <span class="geste-ligne">
+                <img src="images/p-pain-rasage-800.jpg" width="800" height="800" alt="" loading="lazy" decoding="async">
+                <span class="geste-texte">
+                  <span class="etiquette">Geste 02</span>
+                  <strong class="h3-like">Raser</strong>
+                  <span class="mention" style="display:block">Le Pain de rasage · 70&nbsp;g</span>
+                </span>
+                <span class="prix" data-prix="pain-de-rasage"></span>
+              </span>
+            </label>
+            <div class="geste-option">
+              <label class="case" for="optionBol"><input type="checkbox" id="optionBol" name="optionBol"><span>Ajouter le Bol en hêtre : 14,00 €</span></label>
+            </div>
+          </li>
+          <li class="geste">
+            <span class="geste-numero" aria-hidden="true">3</span>
+            <label class="case geste-principal" for="geste3">
+              <input type="checkbox" class="geste-case" id="geste3" name="geste3" checked>
+              <span class="geste-ligne">
+                <img src="images/p-baume.jpg" width="472" height="472" alt="" loading="lazy" decoding="async">
+                <span class="geste-texte">
+                  <span class="etiquette">Geste 03</span>
+                  <strong class="h3-like">Hydrater</strong>
+                  <span class="mention" style="display:block">Le Baume · 40&nbsp;g, boîte rechargeable</span>
+                </span>
+                <span class="prix" data-prix="baume-hydratant-solide"></span>
+              </span>
+            </label>
+            <div class="geste-option">
+              <label class="case" for="optionRecharge"><input type="checkbox" id="optionRecharge" name="optionRecharge"><span>J’ai déjà la boîte : prendre la recharge (11,90 €)</span></label>
+            </div>
+          </li>
+          </ol>
+        </fieldset>
+        <aside class="recap" aria-labelledby="titreRecap">
+          <h2 id="titreRecap">Ta routine</h2>
+          <ul id="recapListe"></ul>
+          <p class="message-coffret" id="messageCoffret" hidden>Les 3 soins en coffret : 39,90 € au lieu de 43,70 € séparément.</p>
+          <p class="total"><span>Total TTC</span><strong id="recapTotal" class="prix"></strong></p>
+          <p class="visuellement-cache" id="recapAnnonce" aria-live="polite"></p>
+          <button type="submit" class="bouton bouton-principal bouton-pleine-largeur" id="ajouterRoutine" aria-describedby="aideRoutine">Ajouter ma routine au panier</button>
+          <p class="mention" id="aideRoutine" hidden>Coche au moins un geste pour continuer.</p>
+          <p class="mention">Livraison 4,90 €, offerte dès 45 €. Retrait gratuit à Lyon et à Annecy.</p>
+        </aside>
+      </form>
+    </div>
+  </main>
+  <script src="data/produits.js"></script>
+  <script src="js/commun.js"></script>
+  <script src="js/panier.js"></script>
+  <script src="js/routine.js"></script>
+</body>
+</html>
